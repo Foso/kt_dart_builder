@@ -18,8 +18,6 @@ Maybe i will add a Builder Pattern like [KotlinPoet](https://github.com/square/k
 
 ## Usage
 
-`code_builder` has a narrow and user-friendly API.
-
 See the `test` folders for additional examples.
 
 For example creating a class with a method:
