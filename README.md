@@ -19,7 +19,7 @@ There are still a few tests which are not working correct.
 
 `code_builder` has a narrow and user-friendly API.
 
-See the `example` and `test` folders for additional examples.
+See the `test` folders for additional examples.
 
 For example creating a class with a method:
 
