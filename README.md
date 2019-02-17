@@ -9,6 +9,10 @@
 A fluent, builder-based kotlin library for generating valid Dart code.
 This is a Kotlin Port of https://github.com/dart-lang/code_builder v3.2.0
 
+## Introduction 🙋‍♂️
+I ported the [Dart Code Builder](https://github.com/dart-lang/code_builder) to Kotlin.
+I tried to stay close to the dart implementation, but sometimes this was not possible, because of language specific features.
+There are still a few tests which are not working correct.
 
 
 ## Usage
