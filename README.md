@@ -3,6 +3,8 @@
 [![jCenter](https://img.shields.io/badge/Apache-2.0-green.svg
 )](https://github.com/Foso/KotlinReactNativeMpp/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![jCenter](https://img.shields.io/badge/v-1.0.0-green.svg
+)]()
 
 A fluent, builder-based kotlin library for generating valid Dart code.
 This is a Kotlin Port of https://github.com/dart-lang/code_builder v3.2.0
