@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="com.example.kt_dart_builder.jvmMain" target="1.6" />
+      <module name="com.example.kt_dart_builder.jvmTest" target="1.6" />
+      <module name="com.example.MybeDartPoet.jvmMain" target="1.6" />
+      <module name="com.example.MybeDartPoet.jvmTest" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
