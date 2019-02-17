@@ -13,6 +13,7 @@ This is a Kotlin Port of https://github.com/dart-lang/code_builder v3.2.0
 I ported the [Dart Code Builder](https://github.com/dart-lang/code_builder) to Kotlin.
 I tried to stay close to the dart implementation, but sometimes this was not possible, because of language specific features.
 There are still a few tests which are not working correct.
+Maybe i will add a Builder Pattern like [KotlinPoet](https://github.com/square/kotlinpoet) 
 
 
 ## Usage
