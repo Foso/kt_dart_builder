@@ -3,9 +3,93 @@ package de.jensklingenberg.kt_dart_builder.main.specs
 import de.jensklingenberg.kt_dart_builder.main.Allocator
 import de.jensklingenberg.kt_dart_builder.main.MyStringBuffer
 import de.jensklingenberg.kt_dart_builder.main.Spec
-import de.jensklingenberg.kt_dart_builder.main.poet.bool
+import de.jensklingenberg.kt_dart_builder.main.mixins.bool
+
 import de.jensklingenberg.kt_dart_builder.main.specs.expression.*
 import de.jensklingenberg.kt_dart_builder.main.visitAll
+
+class ExpressionEmitter : ExpressionVisitor<StringSink> {
+    override fun visitBinaryExpression(expression: BinaryExpression, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitClosureExpression(expression: ClosureExpression, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitCodeExpression(expression: CodeExpression, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitInvokeExpression(expression: InvokeExpression, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitToCodeExpression(expression: ToCodeExpression, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitLiteralExpression(expression: LiteralExpression, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitLiteralListExpression(expression: LiteralListExpression, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitLiteralMapExpression(expression: LiteralMapExpression, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitAnnotation(spec: Expression, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitClass(spec: Class, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitConstructor(spec: Constructor, clazz: String, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitDirective(spec: Directive, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitField(spec: Field, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitLibrary(spec: Library, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitFunctionType(spec: FunctionType, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitMethod(spec: Method, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitReference(spec: Reference, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitSpec(spec: Spec, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitType(spec: TypeReference, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun visitTypeParameters(spec: List<Reference>, context: StringSink?): StringSink {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+}
+
 
 abstract class CodeAndExpressionEmitter : CodeVisitor<StringSink>, ExpressionVisitor<StringSink> {
 

@@ -1,9 +1,10 @@
 package de.jensklingenberg.kt_dart_builder.main.specs
 
+import de.jensklingenberg.kt_dart_builder.main.mixins.BuiltList
 import de.jensklingenberg.kt_dart_builder.main.mixins.HasAnnotations
 import de.jensklingenberg.kt_dart_builder.main.mixins.HasDartDocs
-import de.jensklingenberg.kt_dart_builder.main.poet.BuiltList
-import de.jensklingenberg.kt_dart_builder.main.poet.bool
+import de.jensklingenberg.kt_dart_builder.main.mixins.bool
+
 
 class Constructor(
     val body: Code? = null,

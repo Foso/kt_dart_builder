@@ -1,7 +1,8 @@
 package de.jensklingenberg.kt_dart_builder.main.specs.expression
 
 import de.jensklingenberg.kt_dart_builder.main.SpecVisitor
-import de.jensklingenberg.kt_dart_builder.main.poet.bool
+import de.jensklingenberg.kt_dart_builder.main.mixins.bool
+
 import de.jensklingenberg.kt_dart_builder.main.specs.Expression
 import de.jensklingenberg.kt_dart_builder.main.specs.ExpressionVisitor
 

@@ -4,15 +4,26 @@
 package de.jensklingenberg.kt_dart_builder.main.mixins
 
 import de.jensklingenberg.kt_dart_builder.main.specs.Expression
+import de.jensklingenberg.kt_dart_builder.main.specs.Reference
 
-/// A type of AST node that can have metadata [annotations].
+typealias bool = Boolean
+typealias BuiltList<T> = List<T>
+typealias ListBuilder<T> = ArrayList<T>
+typealias BuiltMap<T,P> = Map<T,P>
+typealias num = Int
+typealias Allocate= (Reference) -> String
+
+
+/**
+ *A type of AST node that can have metadata [annotations].
+*/
 interface HasAnnotations {
     /// Annotations as metadata on the node.
-    val annotations: List<Expression>
+    val annotations: BuiltList<Expression>
 }
 
 /// Compliment to the [HasAnnotations] mixin for metadata [annotations].
 interface HasAnnotationsBuilder {
     /// Annotations as metadata on the node.
-    val annotations: MutableList<Expression>
+    val annotations: ListBuilder<Expression>
 }

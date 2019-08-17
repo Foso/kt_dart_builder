@@ -1,7 +1,7 @@
 package de.jensklingenberg.kt_dart_builder.main
 
+import de.jensklingenberg.kt_dart_builder.main.mixins.bool
 import de.jensklingenberg.kt_dart_builder.main.specs.*
-import de.jensklingenberg.kt_dart_builder.main.poet.bool
 
 
 class DartEmitter : CodeAndExpressionEmitter {

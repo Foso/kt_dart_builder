@@ -1,0 +1,7 @@
+{
+  "main": "assertk.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "name": "assertk",
+  "version": "0.19.0"
+}

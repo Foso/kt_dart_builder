@@ -2,8 +2,9 @@ package de.jensklingenberg.kt_dart_builder.main.specs
 
 import de.jensklingenberg.kt_dart_builder.main.Spec
 import de.jensklingenberg.kt_dart_builder.main.SpecVisitor
-import de.jensklingenberg.kt_dart_builder.main.poet.BuiltList
-import de.jensklingenberg.kt_dart_builder.main.poet.BuiltMap
+import de.jensklingenberg.kt_dart_builder.main.mixins.BuiltList
+import de.jensklingenberg.kt_dart_builder.main.mixins.BuiltMap
+
 
 class FunctionType(
     val returnType: Reference? = null,

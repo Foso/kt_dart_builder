@@ -12,7 +12,7 @@ class ClassTest {
         val expect = "class Foo { }"
         val c = Class(name = "Foo")
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}".replace("\n", ""))
+        assertEquals(expect, "${c.accept(DartEmitter())}".replace("\n", ""))
     }
 
 
@@ -24,7 +24,7 @@ class ClassTest {
         val expect = "abstract class Foo { }"
         val c = Class(name = "Foo", abstract = true)
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -39,7 +39,7 @@ class ClassTest {
             docs = listOf("/// My favorite class.")
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -53,7 +53,7 @@ class ClassTest {
             name = "Foo"
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -66,7 +66,7 @@ class ClassTest {
             types = listOf(refer("T"))
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -79,7 +79,7 @@ class ClassTest {
 
         val c = Class(name = "Map", types = types)
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -99,7 +99,7 @@ class ClassTest {
             )
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -111,7 +111,7 @@ class ClassTest {
             extend = refer("Bar").type
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -124,7 +124,7 @@ class ClassTest {
             mixins = listOf(refer("Foo").type)
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -137,7 +137,7 @@ class ClassTest {
             implements = listOf(refer("Foo").type)
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -149,7 +149,7 @@ class ClassTest {
             constructors = listOf(Constructor())
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -166,7 +166,7 @@ class ClassTest {
             )
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -178,7 +178,7 @@ class ClassTest {
             constructors = listOf(Constructor(annotations = listOf(refer("deprecated"))))
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -190,7 +190,7 @@ class ClassTest {
             constructors = listOf(Constructor(name = "named"))
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
 
@@ -203,7 +203,7 @@ class ClassTest {
             constructors = listOf(Constructor(constant = true))
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -215,7 +215,7 @@ class ClassTest {
             constructors = listOf(Constructor(external = true))
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
 
@@ -233,7 +233,7 @@ class ClassTest {
             )
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -251,7 +251,7 @@ class ClassTest {
             )
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
 
@@ -269,7 +269,7 @@ class ClassTest {
             )
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
 
@@ -287,7 +287,7 @@ class ClassTest {
             )
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -312,7 +312,7 @@ class ClassTest {
             )
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
     @Test
@@ -338,7 +338,7 @@ class ClassTest {
             )
         )
 
-        assertEquals(expect, "${c.accept(de.jensklingenberg.kt_dart_builder.main.DartEmitter())}")
+        assertEquals(expect, "${c.accept(DartEmitter())}")
     }
 
 

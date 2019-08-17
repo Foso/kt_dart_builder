@@ -1,0 +1,7 @@
+{
+  "main": "kotlin/kt_dart_builder-test.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "name": "kt_dart_builder-test",
+  "version": "1.0.0"
+}

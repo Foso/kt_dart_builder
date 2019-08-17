@@ -1,8 +1,6 @@
 package de.jensklingenberg.kt_dart_builder.main.specs
 
 import de.jensklingenberg.kt_dart_builder.main.SpecVisitor
-import de.jensklingenberg.kt_dart_builder.main.poet.bool
-import de.jensklingenberg.kt_dart_builder.main.poet.num
 import de.jensklingenberg.kt_dart_builder.main.specs.expression.*
 import kotlin.reflect.KClass
 

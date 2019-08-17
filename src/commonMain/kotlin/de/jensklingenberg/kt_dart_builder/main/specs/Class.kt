@@ -2,11 +2,8 @@ package de.jensklingenberg.kt_dart_builder.main.specs
 
 import de.jensklingenberg.kt_dart_builder.main.Spec
 import de.jensklingenberg.kt_dart_builder.main.SpecVisitor
-import de.jensklingenberg.kt_dart_builder.main.mixins.HasAnnotations
-import de.jensklingenberg.kt_dart_builder.main.mixins.HasDartDocs
-import de.jensklingenberg.kt_dart_builder.main.mixins.HasGenerics
-import de.jensklingenberg.kt_dart_builder.main.poet.BuiltList
-import de.jensklingenberg.kt_dart_builder.main.poet.bool
+
+import de.jensklingenberg.kt_dart_builder.main.mixins.*
 
 
 class Class(
