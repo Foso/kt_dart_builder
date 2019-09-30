@@ -2,7 +2,7 @@
 <module version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" useProjectSettings="false" isTestModule="true" externalProjectId="kt_dart_builder">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" isTestModule="true" externalProjectId="kt_dart_builder">
         <sourceSets>
           <sourceSet>de.jensklingenberg.kt_dart_builder.commonTest</sourceSet>
           <sourceSet>de.jensklingenberg.kt_dart_builder.jvmMain</sourceSet>
